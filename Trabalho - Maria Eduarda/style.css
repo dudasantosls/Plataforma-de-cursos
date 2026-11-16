@@ -1,0 +1,372 @@
+/* CONFIGURAÇÕES GERAIS */
+body {
+    background-color: #f2f5fa;
+    font-family: Arial, sans-serif;
+    color: #26364a;
+    margin: 0;
+}
+
+
+/* CABEÇALHO */
+header {
+    background-color: #142c4e;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+
+header h1 {
+    font-size: 36px;
+    margin: 10px;
+}
+
+
+/* MENU */
+nav {
+    margin-top: 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    padding: 8px;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #42a5f5;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+/* SEÇÕES */
+section {
+    background-color: white;
+    padding: 35px;
+    margin: 25px 15px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(20, 44, 78, 0.08);
+}
+
+
+/* TÍTULOS */
+h2 {
+    color: #173b63;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+
+/* TEXTOS */
+p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+/* LISTAS */
+li {
+    margin-bottom: 12px;
+}
+
+
+/* IMAGENS */
+img {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+
+/* FORMULÁRIO */
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccd5e0;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+
+input:focus {
+    outline: 2px solid #2479c5;
+    border-color: #2479c5;
+}
+
+
+/* BOTÃO */
+button {
+    background-color: #2479c5;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: #142c4e;
+    transform: translateY(-2px);
+}
+
+
+/* RODAPÉ */
+footer {
+    background-color: #142c4e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+footer a {
+    color: #65b8ff;
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ADAPTAÇÃO PARA CELULAR */
+@media (max-width: 600px) {
+
+
+    main {
+        width: 94%;
+    }
+
+
+    section {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+
+    nav a {
+        margin: 5px;
+    }
+
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+/* PRIMEIRA SEÇÃO - APRESENTAÇÃO */
+
+
+#preciso {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px 40px;
+    padding: 45px;
+}
+
+
+/* TÍTULO */
+#preciso h2 {
+    grid-column: 1;
+    margin: 0;
+    font-size: 32px;
+}
+
+
+/* PARÁGRAFO */
+#preciso p {
+    grid-column: 1;
+    margin: 0;
+    font-size: 17px;
+}
+
+
+/* IMAGEM */
+#preciso img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 15px;
+}
+
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+
+    #preciso {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+
+    #preciso h2,
+    #preciso p,
+    #preciso img {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+
+}
+#comecar li {
+    background-color: #eef5fc;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #2479c5;
+    margin: 0;
+    transition: 0.3s;
+}
+
+
+#comecar li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ADAPTAÇÃO PARA CELULAR */
+
+
+@media (max-width: 600px) {
+    #comecar ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ORGANIZAÇÃO DOS TRÊS CARDS */
+
+
+#comecar ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+
+#comecar li {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    background-color: #eef5fc;
+    border-left: 4px solid #2479c5;
+    border-radius: 12px;
+}
+
+
+/* CELULAR */
+@media (max-width: 600px) {
+    #comecar ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* SEÇÃO DE BENEFÍCIOS */
+
+
+#beneficios {
+    background-color: #eaf3fc;
+    border-left: 5px solid #2479c5;
+    padding: 40px;
+}
+
+
+#beneficios h2 {
+    color: #173b63;
+    margin-bottom: 20px;
+}
+
+
+#beneficios p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+/* SEÇÃO DE CONTATO */
+
+
+#contato {
+    background-color: white;
+    padding: 40px;
+}
+
+
+#contato h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* FORMULÁRIO */
+
+
+#formulario {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+#formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+#formulario input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccd5e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+/* BOTÃO ENVIAR */
+
+
+#formulario button {
+    width: 100%;
+    background-color: #2479c5;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+#formulario button:hover {
+    background-color: #142c4e;
+    transform: translateY(-2px);
+}
